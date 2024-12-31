@@ -35,7 +35,7 @@ jobs:
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh
             nvm use 20
-            cd ~/deploy-node-server
+            cd ~/fastify-server
             git fetch --all
             git reset --hard origin/main
             echo "${{secrets.ENV_PRODUCTION}}" > .env
